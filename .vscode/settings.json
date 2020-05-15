@@ -1,0 +1,35 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "out": false // set this to true to hide the "out" folder with the compiled JS files
+    },
+    "search.exclude": {
+        "out": true // set this to false to include "out" folder in search results
+    },
+    // Turn off tsc task auto detection since we have the necessary tasks as npm scripts
+    "typescript.tsc.autoDetect": "off",
+    "eslint.format.enable": true,
+    "editor.tabSize": 2,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "eslint.enable": true,
+    "eslint.alwaysShowStatus": true,
+      "prettier.requireConfig": true,
+      "prettier.insertPragma": false,
+      "eslint.options": {
+          "extensions": [
+              ".js",
+              ".jsx",
+              ".ts",
+              ".tsx"
+          ]
+      },
+      "eslint.validate": [
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact"
+    ],
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+}
