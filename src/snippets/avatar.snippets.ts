@@ -5,7 +5,7 @@
       body: `
       <Avatar
         size="large"
-        src="'$1'"
+        src="$1"
         style={{ marginLeft: 8 }}
       />
       `,

@@ -37,11 +37,22 @@ const getSnippetsTemp = () => {
     });
 };
 
+const handleIndentation = (item: string) => {
+  const charList = item.split("").findIndex(item => item !== '');
+  if (charList) {return item.slice(charList / 2);}
+  return item;
+};
+
 function formatSnippets(component: ISnippets) {
   const { prefix, body, description } = component;
+  const strList = body.split("\n");
+  const cutIndex = strList.find(item => item)?.split("").findIndex(item => item !== " ")!;
+  
   return {
     prefix,
-    body: body.split("\n"),
+    body: strList.map(item => {
+      return item.length <= cutIndex ? item : handleIndentation(item.slice(cutIndex));
+    }),
     description,
   };
 }

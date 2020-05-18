@@ -11,7 +11,7 @@
         </Button>
       }
       >
-        {"$1"}
+        {$1}
       </Card>
       `,
       prefix: `fcard`,

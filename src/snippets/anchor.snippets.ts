@@ -3,7 +3,7 @@
 
   export default  [{
       body: `
-      <Anchor href="'$1'" target="_blank">
+      <Anchor href="$1" target="_blank">
         点我
       </Anchor>
       `,

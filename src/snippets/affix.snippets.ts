@@ -3,7 +3,7 @@
 
   export default  [{
       body: `
-      <Affix offsetTop={64} onChange={"$1"}>
+      <Affix offsetTop={64} onChange={$1}>
         <Button type="primary">affix button</Button>
       </Affix>
       `,

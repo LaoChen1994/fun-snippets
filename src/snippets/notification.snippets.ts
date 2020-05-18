@@ -5,7 +5,7 @@
       prefix: "fnotification",
       body: `
       Notification.open({
-        message: '"$1"',
+        message: "$1",
         description:
           '',
         'topCenter',

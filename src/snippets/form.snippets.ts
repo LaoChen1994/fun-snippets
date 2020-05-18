@@ -3,7 +3,7 @@ import { ISnippets } from "./interface";
 export default [{
   prefix: "fformb",
   body: `
-  <Form layout="horizontal" state='$1' onChange={() => {}}>
+  <Form layout="horizontal" state={$1} onChange={() => {}}>
       {bindField => (
           <Form.Item label="用户名">
               {bindField(<Input name="username" />)}

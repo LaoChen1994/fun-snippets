@@ -5,16 +5,16 @@ export default  [{
     body: `
         <Grid gutter={8}>
             <Grid.Item span={3}>
-            <'$1'>3</'$1'>
+            <$1>3</$1>
             </Grid.Item>
             <Grid.Item span={3}>
-            <'$1'>3</'$1'>
+            <$1>3</$1>
             </Grid.Item>
             <Grid.Item span={3}>
-            <'$1'>3</'$1'>
+            <$1>3</$1>
             </Grid.Item>
             <Grid.Item span={3}>
-            <'$1'>3</'$1'>
+            <$1>3</$1>
             </Grid.Item>
         </Grid>
     `,
@@ -22,7 +22,7 @@ export default  [{
 }, {
     prefix: 'fgriditem',
     body: `
-    <Grid.Item span={'$1'}>
+    <Grid.Item span={$1}>
         <div></div>
     </Grid.Item>
     `,
